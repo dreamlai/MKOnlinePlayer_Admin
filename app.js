@@ -6,7 +6,16 @@ var logger = require('morgan');
 
 var app = express();
 
+<<<<<<< HEAD
 global.config = require('./config.js');
+=======
+global.config = {
+  datahost: 'localhost',
+  database: 'music',
+  dataport: 27017,
+  datadebug: false
+}
+>>>>>>> parent of c8cd24a... 修改数据库配置，放在config.json里面
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
